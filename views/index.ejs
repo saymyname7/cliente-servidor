@@ -1,0 +1,35 @@
+<% include victimas %>
+<% if(entries.length){%>
+<% entries.forEach((entry) =>{%>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+                <div class="text-muted pull-right">
+                <%= entry.created %>
+                </div>
+            <%= entry.Nombre %>
+        </div>
+
+        <div class="text-muted pull-right">
+                <h4>Direccion</h4>
+        </div>
+        <div class="panel-body">
+                    <%= entry.Direccion %>
+        </div>
+        <div class="text-muted pull-right">
+                <h4>Telefono</h4>
+        </div>
+        <div class="panel-body">
+                    <%= entry.Telefono %>
+        </div>
+        <div class="text-muted pull-right">
+                <h4>Instagram</h4>
+        </div>
+        <div class="panel-body">
+                    <%= entry.Instagram %>
+        </div>
+    </div>
+    <%})%>
+    <% }else{%>
+        <p>No hay victimas registradas.!<a href="/nuevasVictimas">Registra una!</a></p>
+    <%}%>
+    <% include footer %>

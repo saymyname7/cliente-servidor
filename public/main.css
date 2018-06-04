@@ -1,0 +1,38 @@
+#fondo{
+    background-color: #DEDCDC;
+}
+#ZOM2{
+    background-image: url("imagenes/ZOM.jpg");
+    background-repeat: no-repeat, repeat;  
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+}
+#completo{
+    position: relative;
+    width: 100%;
+
+}
+#contenedor {
+    position: relative;
+    left: 15%;
+    top: 0%;
+    width: 800px;
+    background-color: white;
+    padding: 1%;
+    border: 2px black double;
+    }
+#contenedor2 {
+    position: absolute;
+    left: 57.0%;
+    top: 0%;
+    width: 800px;
+    padding: 1%;
+
+    }
+h1{
+    font-family: Decorativa;
+}
